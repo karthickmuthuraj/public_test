@@ -1,3 +1,5 @@
+## AI DevSecOps Workflow
+
 ```mermaid
 graph TD
     subgraph "Data Sourcing & Management"
@@ -36,4 +38,41 @@ graph TD
     G --> H;
     M --> N;
     Q --> R;
+```
+
+## Operational Issues in AI Workflows
+
+```mermaid
+mindmap
+  root((Operational Issues in AI Workflows))
+    ::icon(fa fa-brain)
+    Data Issues
+      ::icon(fa fa-database)
+      Data Drift
+      Data Quality Degradation
+      Data Poisoning
+      Privacy Leaks
+    Model Issues
+      ::icon(fa fa-robot)
+      Model Degradation
+      Concept Drift
+      Adversarial Attacks
+      Explainability Issues
+    Infrastructure Issues
+      ::icon(fa fa-server)
+      Pipeline Failures
+      Scalability Problems
+      Resource Starvation
+      Latency Increases
+    Security Issues
+      ::icon(fa fa-shield-alt)
+      Model Evasion
+      Inference Attacks
+      Vulnerabilities in Dependencies
+      Unauthorized Access
+    Compliance Issues
+      ::icon(fa fa-gavel)
+      Regulatory Violations (GDPR, CCPA)
+      Audit Trail Gaps
+      Unfair Bias
 ```
