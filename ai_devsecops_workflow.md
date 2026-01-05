@@ -1,3 +1,42 @@
+## AI Security Pipeline Controls
+
+```mermaid
+graph TD
+    subgraph "Data Sourcing & Management"
+        A[Data Provenance & Integrity] --> B[PII/PHI Scanning & Masking];
+        B --> C[Data Access Control & Encryption];
+    end
+
+    subgraph "Model Development"
+        D[AI Threat Modeling] --> E[Secure Coding & SAST];
+        E --> F[Dependency Scanning & SCA];
+        F --> G[Adversarial Robustness Testing];
+    end
+
+    subgraph "CI/CD Pipeline"
+        H[Container Security Scanning] --> I[IaC Scanning];
+        I --> J[DAST];
+        J --> K[Model Signing & Verification];
+    end
+
+    subgraph "Model Deployment"
+        L[Secure Model Registry] --> M[Penetration Testing];
+        M --> N[Configuration & Secrets Management];
+        N --> O[Endpoint Security & WAF];
+    end
+
+    subgraph "Continuous Monitoring"
+        P[Model Behavior Monitoring] --> Q[Adversarial Attack Detection];
+        Q --> R[SIEM Integration];
+        R --> S[Input/Output Validation];
+    end
+
+    C --> D;
+    G --> H;
+    K --> L;
+    O --> P;
+```
+
 ## AI DevSecOps Workflow
 
 ```mermaid
