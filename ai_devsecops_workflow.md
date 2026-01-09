@@ -4,6 +4,7 @@
 graph TD
     subgraph "Data Sourcing & Management"
         A[Data Ingestion] --> B{Data Quality & Bias Checks};
+        click A "https://aws.amazon.com/what-is/data-ingestion/" "Learn more about Data Ingestion"
         B --> C[Data Encryption];
     end
 
@@ -11,12 +12,15 @@ graph TD
         D[Feature Engineering] --> E[Model Training];
         E --> F{Threat Modeling};
         F --> G[Secure Coding & SAST];
+        click G "https://www.crowdstrike.com/en-us/cybersecurity-101/cloud-security/static-application-security-testing-sast/" "Learn more about SAST"
     end
 
     subgraph "CI/CD Pipeline"
         H[Code Commit] --> I{CI Orchestration};
         I --> J[DAST & Dependency Scanning];
+        click J "https://www.fortinet.com/resources/cyberglossary/dynamic-application-security-testing" "Learn more about DAST"
         J --> K[Container Scanning];
+        click K "https://www.crowdstrike.com/en-us/cybersecurity-101/cloud-security/container-scanning/" "Learn more about Container Scanning"
         K --> L[Model Validation];
         L --> M[Signed & Versioned Model];
     end
@@ -24,6 +28,7 @@ graph TD
     subgraph "Model Deployment"
         N[Model Registry] --> O{Deployment to Staging};
         O --> P[Security & Penetration Testing];
+        click P "https://www.cloudflare.com/learning/security/glossary/what-is-penetration-testing/" "Learn more about Penetration Testing"
         P --> Q{Production Deployment};
     end
 
