@@ -13,6 +13,8 @@ graph TD
         F --> G[Secure Coding & SAST];
     end
 
+    click F "https://cheatsheetseries.owasp.org/cheatsheets/Threat_Modeling_Cheat_Sheet.html" "Learn more about Threat Modeling"
+
     subgraph "CI/CD Pipeline"
         H[Code Commit] --> I{CI Orchestration};
         I --> J[DAST & Dependency Scanning];
