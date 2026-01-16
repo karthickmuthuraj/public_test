@@ -4,12 +4,14 @@
 graph TD
     subgraph "Data Sourcing & Management"
         A[Data Ingestion] --> B{Data Quality & Bias Checks};
+        click B "https://www.paloaltonetworks.com/cyberpedia/what-is-ai-bias" _blank
         B --> C[Data Encryption];
     end
 
     subgraph "Model Development"
         D[Feature Engineering] --> E[Model Training];
         E --> F{Threat Modeling};
+        click F "https://owasp.org/www-community/Threat_Modeling_Process" _blank
         F --> G[Secure Coding & SAST];
     end
 
@@ -17,6 +19,7 @@ graph TD
         H[Code Commit] --> I{CI Orchestration};
         I --> J[DAST & Dependency Scanning];
         J --> K[Container Scanning];
+        click K "https://owasp.org/www-project-devsecops-guideline/latest/02f-Container-Vulnerability-Scanning" _blank
         K --> L[Model Validation];
         L --> M[Signed & Versioned Model];
     end
