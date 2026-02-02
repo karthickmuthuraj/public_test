@@ -1,0 +1,3 @@
+## 2025-05-14 - [Mermaid Accessibility and Visual Polish in Documentation]
+**Learning:** In repositories that consist solely of documentation (Markdown), Mermaid diagrams serve as the primary "UI" elements. These can be significantly improved for accessibility using `accTitle` and `accDescr` attributes, which help screen readers interpret complex charts. Visual clarity can be enhanced using `classDef` and `class` assignments to color-code semantic stages.
+**Action:** When working on Mermaid-heavy documentation, always include accessibility metadata and consider semantic color-coding to improve the user's ability to parse and navigate the information.
