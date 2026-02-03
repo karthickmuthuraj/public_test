@@ -1,0 +1,3 @@
+## 2025-02-03 - [Accessibility and Visual Scanning for Mermaid Diagrams]
+**Learning:** In repositories dominated by documentation, Mermaid diagrams within Markdown can be significantly enhanced for accessibility and scannability. Adding `accTitle` and `accDescr` provides critical context for screen reader users, while using `classDef` to semantically color-code specific types of nodes (e.g., security-related steps) improves visual scanning for all users.
+**Action:** Always check for Mermaid diagrams in Markdown files and ensure they have accessibility metadata and, where appropriate, semantic styling to highlight key concepts.
