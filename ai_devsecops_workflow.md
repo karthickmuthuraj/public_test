@@ -2,6 +2,8 @@
 
 ```mermaid
 graph TD
+    accTitle: AI DevSecOps Workflow
+    accDescr: A flowchart depicting the end-to-end AI DevSecOps process, organized into five stages: Data Sourcing & Management, Model Development, CI/CD Pipeline, Model Deployment, and Continuous Monitoring. It highlights the integration of security checks throughout the lifecycle.
     subgraph "Data Sourcing & Management"
         A[Data Ingestion] --> B{Data Quality & Bias Checks};
         B --> C[Data Encryption];
@@ -38,12 +40,17 @@ graph TD
     G --> H;
     M --> N;
     Q --> R;
+
+    classDef security fill:#f96,stroke:#333,stroke-width:2px;
+    B,C,F,G,J,K,P,U:::security
 ```
 
 ## Operational Issues in AI Workflows
 
 ```mermaid
 mindmap
+    accTitle: Operational Issues in AI Workflows
+    accDescr: A mindmap categorizing operational issues in AI workflows into five main areas: Data Issues, Model Issues, Infrastructure Issues, Security Issues, and Compliance Issues.
   root((Operational Issues in AI Workflows))
     ::icon(fa fa-brain)
     Data Issues
