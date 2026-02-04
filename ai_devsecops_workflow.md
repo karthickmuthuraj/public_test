@@ -2,6 +2,8 @@
 
 ```mermaid
 graph TD
+    accTitle: AI DevSecOps Workflow
+    accDescr: A flowchart illustrating the end-to-end process of AI development with security integrated at every stage, from data sourcing to continuous monitoring.
     subgraph "Data Sourcing & Management"
         A[Data Ingestion] --> B{Data Quality & Bias Checks};
         B --> C[Data Encryption];
@@ -38,12 +40,25 @@ graph TD
     G --> H;
     M --> N;
     Q --> R;
+
+    classDef security fill:#f96,stroke:#333,stroke-width:2px;
+    class C,F,G,J,K,P,U security;
+
+    click C "https://cheatsheetseries.owasp.org/cheatsheets/Cryptographic_Storage_Cheat_Sheet.html" "OWASP Cryptographic Storage Cheat Sheet"
+    click F "https://owasp.org/www-community/Threat_Modeling" "OWASP Threat Modeling"
+    click G "https://owasp.org/www-community/Source_Code_Analysis_Tools" "OWASP SAST Tools"
+    click J "https://owasp.org/www-community/Vulnerability_Scanning_Tools" "OWASP DAST Tools"
+    click K "https://owasp.org/www-project-docker-top-10/" "OWASP Docker Top 10"
+    click P "https://owasp.org/www-project-web-security-testing-guide/" "OWASP Web Security Testing Guide"
+    click U "https://cheatsheetseries.owasp.org/cheatsheets/Logging_Vocabulary_Cheat_Sheet.html" "OWASP Logging Vocabulary Cheat Sheet"
 ```
 
 ## Operational Issues in AI Workflows
 
 ```mermaid
 mindmap
+  accTitle: Operational Issues in AI Workflows
+  accDescr: A mindmap categorizing various operational challenges in AI workflows, including data, model, infrastructure, security, and compliance issues.
   root((Operational Issues in AI Workflows))
     ::icon(fa fa-brain)
     Data Issues
